@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var teacher=(function(){
+			
+			function add (m,n){
+				return m+n
+			}
+			function sub (m,n){
+				return m-n
+			}
+			function bus (m,n){
+				return m*n
+			}
+			return{
+				fun1:add,
+				fun2:sub,
+				fun3:bus
+			}
+
+		})()
+			// var result = teacher.fun1(100,300)
+			// console.log(result)
+			// var result = teacher.fun2(100,300)
+			// console.log(result)
+			var result = teacher.fun3(100,300)
+			console.log(result)
+	</script>
+</body>
+</html>

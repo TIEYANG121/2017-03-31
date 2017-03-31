@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	function Dog(name,age,sex){
+		this.name=name;
+		this.age=age;
+		this.sex=sex;
+		this.sayName=function(){
+			console.log("你是" + this.name)
+		}
+	}
+	var dog = new Dog("二哈");
+	dog.sayName(); 
+	// console.log(dog)
+</script>
+	
+</body>
+</html>

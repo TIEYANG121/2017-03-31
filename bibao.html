@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button>按钮</button>
+	<script>
+		
+		// (function(){
+		// 	var  btn=document.querySelector("button")
+		// 	btn.onclick=function(){								闭包被销毁
+		// 		alert("hehe")
+		// 	}
+		// })()
+
+
+		// (function(){
+		// 	var  btn=document.querySelector("button")
+		// 	var n=0;
+		// 	btn.onclick=function(){
+		// 		n++;											闭包没有被销毁
+		// 		console.log(n)
+		// 	}
+		// })()
+
+		(function(){
+			var  btn=document.querySelector("button")
+			
+			btn.onclick=function(){
+				var n=0;										闭包被销毁
+				n++;
+				console.log(n)
+			}
+		})()
+	</script>
+</body>
+</html>
